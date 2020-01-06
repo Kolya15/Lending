@@ -1,3 +1,4 @@
+// Реализация слайдера
 let leftArrow = document.querySelector(".client-card_slider-arrow");
 let rightArrow = document.querySelector(".client-card_slider-arrow_right");
 let wraperSliderBox = document.querySelector(".wraper-client-card");
@@ -71,6 +72,7 @@ function dotActive(n) {
   }
 }
 
+// Открытие меню
 let menuBtn = document.querySelector(".menu-btn");
 let dropMenu = document.querySelector(".drop-menu");
 let span = document.querySelector(".menu-line");
@@ -79,6 +81,7 @@ menuBtn.addEventListener("click", function() {
   dropMenu.classList.toggle("dropMenu");
 });
 
+// Скрол меню
 const anchors = document.querySelectorAll("a.scroll-to");
 
 for (let anchor of anchors) {
