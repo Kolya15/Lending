@@ -1,0 +1,622 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none !important; }
+
+li {
+  list-style-type: none; }
+
+a,
+a:hover {
+  text-decoration: none;
+  outline: none; }
+
+.page__grey {
+  background-color: #f5f5f5; }
+
+.page__silver {
+  background-color: #fbfbfb; }
+
+.page .header-top {
+  margin-top: 80px; }
+
+.page .logo {
+  font-size: 38px;
+  line-height: 35pxx;
+  color: #494949;
+  font-weight: 600;
+  border-radius: 2px;
+  border: 3.54px solid #706b73;
+  padding: 5px; }
+  .page .logo .logo_orange {
+    color: #fc6744; }
+
+.page .menu-btn {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  cursor: pointer !important; }
+  .page .menu-btn .menu-line,
+  .page .menu-btn .menu-line::before,
+  .page .menu-btn .menu-line::after {
+    position: absolute;
+    left: 0;
+    width: inherit;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #706b73;
+    transition: 0.8s; }
+  .page .menu-btn .menu-line::before,
+  .page .menu-btn .menu-line::after {
+    content: "";
+    transform: translateY(-10px);
+    transition: 1s; }
+  .page .menu-btn .menu-line::after {
+    transform: translateY(10px); }
+  .page .menu-btn .menu-btn_active {
+    height: 0 !important;
+    transition: 0.8s; }
+  .page .menu-btn .menu-btn_active::before {
+    transform: rotate(45deg); }
+  .page .menu-btn .menu-btn_active::after {
+    transform: rotate(-45deg); }
+
+.page .drop_menu__box {
+  display: block;
+  height: 100px;
+  margin-top: 20px; }
+
+.page .drop-menu {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  -moz-transition: opacity 1s, max-height 1s;
+  -ms-transition: opacity 1s, max-height 1s;
+  transition: opacity 1s, max-height 1s; }
+
+.page .dropMenu {
+  max-height: 100px;
+  opacity: 1; }
+
+.page .drop-menu_item a {
+  font-size: 17px;
+  line-height: 20pxx;
+  color: #494949;
+  font-weight: 500; }
+
+.page .title {
+  font-size: 50px;
+  line-height: 46px;
+  color: #6b6b6b;
+  font-weight: 600;
+  padding-top: 145px; }
+
+.page .laters_orange {
+  color: #fc6744; }
+
+.page .text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #6b6b6b;
+  font-weight: 400; }
+
+.page .form-send-message {
+  padding: 25px 40px 20px 40px;
+  width: 370px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 57px rgba(20, 20, 21, 0.2); }
+  .page .form-send-message .form-send-message__form-title {
+    font-size: 25px;
+    line-height: 25px;
+    color: #37302f;
+    font-weight: 600;
+    text-align: center; }
+  .page .form-send-message .form-send-message__input {
+    width: 100%;
+    padding-top: 35px;
+    border: none;
+    border-bottom: 1px solid #c7c7c7; }
+  .page .form-send-message .form-send-message__input::placeholder {
+    font-size: 15px;
+    line-height: 25px;
+    color: #666666;
+    font-weight: 400; }
+  .page .form-send-message .btn-center {
+    text-align: center; }
+    .page .form-send-message .btn-center .form-send-message__submit {
+      position: relative;
+      width: 100%;
+      height: 55px;
+      margin-top: 18px;
+      border-radius: 27px;
+      box-shadow: 5.5px 9.526px 20px rgba(20, 20, 21, 0.08);
+      background-color: #ff5c36;
+      border: 1px solid rgba(1, 2, 2, 0.07); }
+    .page .form-send-message .btn-center .form-send-message__submit[value="Send Message"] {
+      font-size: 16px;
+      line-height: 25px;
+      color: #ffffff;
+      font-weight: 400; }
+  .page .form-send-message .btn-center:after {
+    content: "";
+    position: absolute;
+    background-image: url(https://picua.org/images/2019/07/27/4a0e524a432326194080ee434f98dd34.png);
+    width: 17px;
+    height: 10px;
+    bottom: 11.5%;
+    right: 26%; }
+
+.page .process_box {
+  margin-top: 113px;
+  margin-bottom: 179px; }
+  .page .process_box .process {
+    margin-bottom: 40px;
+    position: relative; }
+    .page .process_box .process .process_card__light-blue {
+      background-color: #4eb2f7;
+      border-radius: 5px; }
+    .page .process_box .process .process_card__purple {
+      background-color: #c049f8;
+      border-radius: 5px; }
+    .page .process_box .process .process_card__blue {
+      background-color: #817eff;
+      border-radius: 5px; }
+    .page .process_box .process .process_card__red {
+      background-color: #f74770;
+      border-radius: 5px; }
+    .page .process_box .process .process_card-img {
+      margin: 52px 0 20px;
+      max-height: 44px;
+      height: 100%; }
+    .page .process_box .process .process_card-title {
+      font-size: 20px;
+      line-height: 42px;
+      color: #ffffff;
+      font-weight: 600; }
+    .page .process_box .process .process_card-text {
+      font-size: 15px;
+      line-height: 22px;
+      color: #ffffff;
+      font-weight: 400; }
+
+.page .main-btn {
+  width: 100%;
+  height: 55px;
+  border-radius: 27px;
+  background-color: #ffffff;
+  position: relative;
+  top: 25px;
+  border: none;
+  box-shadow: 0 0 14px rgba(20, 20, 21, 0.05); }
+  .page .main-btn::before {
+    content: "";
+    position: absolute;
+    background-image: url(https://picua.org/images/2019/08/11/fff403dbfc745e569afb704a5ad3b29f.png);
+    width: 16px;
+    height: 16px;
+    top: 37%;
+    left: 19%; }
+
+.page .box {
+  padding-bottom: 164px; }
+
+.page .box-orange {
+  height: 358px;
+  background-color: #ff5c36;
+  margin-bottom: 23px; }
+
+.page .services {
+  margin-top: 140px;
+  margin-bottom: 170px; }
+
+.page .servis-list__item {
+  width: 104px;
+  height: 92px;
+  border-radius: 2px;
+  box-shadow: 0 0 1px rgba(20, 20, 21, 0.14);
+  background-color: #fbfbfb;
+  position: relative;
+  margin-bottom: 6px; }
+
+.page .servis-list__item-img {
+  position: absolute;
+  margin: auto;
+  left: 15%;
+  top: 10%;
+  bottom: 0;
+  right: 0; }
+
+.page .services_title {
+  margin-top: -15px;
+  font-size: 30px;
+  line-height: 46px;
+  color: #000000;
+  font-weight: 400; }
+
+.page .services_line__red {
+  width: 57px;
+  height: 3px;
+  background-color: #ff5c36;
+  margin-bottom: 18px; }
+
+.page .services_text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  font-weight: 400; }
+
+.page .services_img {
+  width: 100%; }
+
+.page .services-btn {
+  margin-top: px; }
+
+.page .team_skill {
+  margin-top: 125px; }
+
+.page .team_skill-card {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.page .team_skill-front {
+  height: 100%;
+  box-shadow: 0 0 49px rgba(20, 20, 21, 0.11);
+  background-color: #fff3f0;
+  margin-bottom: 177px;
+  padding-top: 170px; }
+
+.page .team_skill-back {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background-color: #ff5c36;
+  transition: 0.8s; }
+
+.page .team_skill-card:hover .team_skill-back {
+  transition: 0.8s;
+  transform: scaleY(0); }
+
+.page .team_skill-box_white {
+  width: 75%;
+  height: 95px;
+  border-radius: 2px;
+  box-shadow: 3px 5.196px 16px rgba(20, 20, 21, 0.08);
+  background-color: #ffffff;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 90%;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  .page .team_skill-box_white .team_skill-box-title {
+    font-size: 30px;
+    line-height: 46px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: -10px; }
+  .page .team_skill-box_white .team_skill-box-subtitle {
+    font-size: 16px;
+    line-height: 48px;
+    color: #000000;
+    font-weight: 300; }
+
+.page .team_skill-text {
+  font-size: 11px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 8px; }
+
+.page .team_skill-level {
+  margin-left: auto;
+  margin-right: auto;
+  width: 151px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #817f7e; }
+  .page .team_skill-level .team_skill-design-level__orange {
+    width: 123px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ff6e47; }
+  .page .team_skill-level .team_skill-english-level__orange {
+    width: 109px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ff6e47; }
+  .page .team_skill-level .team_skill-communication-level__orange {
+    width: 117px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ff6e47; }
+
+.page .team_skill-title {
+  font-size: 30px;
+  line-height: 46px;
+  color: #202020;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: -15px; }
+
+.page .team_skill-subtitle {
+  font-size: 17px;
+  line-height: 48px;
+  color: #ff724c;
+  font-weight: 300;
+  margin-bottom: 0px; }
+
+.page .team_icon > i {
+  margin-right: 15px; }
+
+.page .team_icon-twitter {
+  background-image: url(https://picua.org/images/2019/08/11/fc307906923256e03f9712e3dada5f8a.png);
+  width: 16px;
+  height: 14px; }
+
+.page .team_icon-facebook {
+  background-image: url(https://picua.org/images/2019/08/11/8d5e63eeafa45d8036965ccb46170562.png);
+  width: 10px;
+  height: 18px; }
+
+.box-client-card {
+  position: relative;
+  overflow: hidden; }
+
+.wraper-client-card {
+  transition: 1s; }
+
+.client-card {
+  margin-top: 140px;
+  border-radius: 1px;
+  box-shadow: 0 0 27px rgba(20, 20, 21, 0.09);
+  background-color: #ffffff;
+  padding-top: 90px;
+  position: relative; }
+
+.client-card_slider-arrow {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  box-shadow: 1.5px 2.598px 14px rgba(20, 20, 21, 0.08);
+  background-color: #ffffff; }
+  .client-card_slider-arrow .client-card_slider-arrow__left {
+    background: url(https://picua.org/images/2019/08/11/c1e3ca3b04204b4e5a549e788c93669f.png) no-repeat;
+    width: 12px;
+    height: 18px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; }
+
+.client-card_slider-arrow_right {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  box-shadow: 1.5px 2.598px 14px rgba(20, 20, 21, 0.08);
+  background-color: #ffffff; }
+  .client-card_slider-arrow_right .client-card_slider-right {
+    background: url(https://picua.org/images/2020/01/03/e2c45b6d2df3c5a81ccb28b614e54aa0.png) no-repeat;
+    width: 12px;
+    height: 18px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; }
+
+.client-card_slider-arrow-active {
+  background-color: #ff6e47; }
+
+.client-card_text {
+  font-size: 17px;
+  line-height: 27px;
+  color: #000000;
+  font-weight: 400; }
+
+.client-card_rating > i {
+  background-image: url(https://picua.org/images/2019/08/11/44d4fb24381c2ff48f597f30e0346a99.png);
+  width: 10px;
+  height: 12px;
+  margin-bottom: 20px; }
+
+.slider-line {
+  margin-top: 50px;
+  margin-bottom: 140px;
+  margin-right: 8px;
+  width: 18px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #e0e0e0; }
+  .slider-line:nth-last-child(1) {
+    display: none; }
+
+.active {
+  background-color: #ff6e47; }
+
+.circle {
+  width: 98px;
+  height: 98px;
+  border: 1px solid #cfcfd0;
+  border-radius: 49px;
+  box-shadow: 0 0 1px rgba(20, 20, 21, 0.75);
+  background-color: #ffffff;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 100%;
+  right: 0; }
+
+.partner {
+  padding: 76px 0 96px 0; }
+  .partner img {
+    width: inherit; }
+
+.footer_btn {
+  padding-top: 43px; }
+
+.footer_main-btn {
+  width: 240px;
+  height: 55px;
+  border-radius: 27px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 0 14px rgba(20, 20, 21, 0.05);
+  text-align: center;
+  line-height: 49px;
+  color: #000000 !important; }
+
+.footer-down {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.wraper-link {
+  padding: 0px; }
+
+.wraper-link li {
+  display: inline-block; }
+
+.wraper-link li .social-link {
+  display: block;
+  margin-left: 15px;
+  width: 53px;
+  height: 52px;
+  border-radius: 26px;
+  background-color: #d3d3d3;
+  position: relative; }
+
+.wraper-link li .active {
+  box-shadow: 0 0 23px rgba(20, 20, 21, 0.29);
+  background-color: #ff6e47; }
+
+.social-link > i {
+  display: inline-block;
+  width: 10px;
+  height: 22px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0; }
+
+.social-link_facebook {
+  background: url(https://picua.org/images/2019/08/11/6075a2db266a800b80d4d1d67fa94be3.png) no-repeat; }
+
+.social-link_twitter {
+  background: url(https://picua.org/images/2019/08/11/45126ea43378da72b66c0d92c545a27b.png) no-repeat;
+  width: 20px !important; }
+
+.social-link_ball {
+  background: url(https://picua.org/images/2019/08/11/fa95728c7e4b9c844c3cea41f75bc7bb.png) no-repeat;
+  width: 20px !important; }
+
+.social-link_Be {
+  background: url(https://picua.org/images/2019/08/11/51d174427f05c67ddbaa8a8ba4987e63.png) no-repeat;
+  width: 25px !important; }
+
+.footer-down-text {
+  padding-left: 25px;
+  font-size: 17px;
+  line-height: 46px;
+  color: #000000;
+  font-weight: 400; }
+
+@media screen and (max-width: 992px) {
+  .btn-center::after {
+    display: none; }
+  .process_box {
+    margin-bottom: 100px !important; }
+  .servis-list__item {
+    width: 70px !important;
+    height: 70px !important; }
+    .servis-list__item img {
+      width: inherit !important; }
+  .services_text {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: #000000;
+    font-weight: 400; }
+  .page .team_skill-box_white {
+    height: 80px; } }
+
+@media screen and (max-width: 768px) {
+  .header-top {
+    margin-top: 40px !important; }
+  .client-card {
+    width: inherit !important; }
+  .slider-line:nth-last-child(1) {
+    display: inline-block; }
+  .aaa {
+    display: none; }
+  .drop-menu_item a {
+    font-size: 16px !important;
+    line-height: 20pxx;
+    color: #494949;
+    font-weight: 400 !important; }
+  .services_img {
+    display: none; }
+  .team_skill-card {
+    height: 270px !important;
+    margin-bottom: 70px; }
+  .team_skill-front {
+    padding-top: 70px !important; }
+  .team_skill-title {
+    margin-top: 0px !important;
+    font-size: 25px !important; }
+  .team_skill-subtitle {
+    font-size: 16px !important; }
+  .client-card_text {
+    font-size: 15px; }
+  .partner {
+    padding: 50px 0 50px 0; }
+  .footer-down-text {
+    font-size: 15px; } }
+
+@media screen and (max-width: 576px) {
+  .drop-menu_item a {
+    font-size: 14px !important;
+    line-height: 20pxx;
+    color: #494949;
+    font-weight: 400 !important; }
+  .partner div {
+    margin-bottom: 20px; }
+  .client-card_text {
+    font-size: 12px; } }
+
+@media screen and (max-width: 375px) {
+  .drop-menu ul {
+    padding-left: 20px; }
+  .drop-menu_item a {
+    font-size: 13px !important;
+    line-height: 0px;
+    color: #494949;
+    font-weight: 400 !important; }
+  .page .form-send-message {
+    width: 300px; } }
